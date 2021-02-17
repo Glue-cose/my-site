@@ -25,6 +25,12 @@ header {
   margin-bottom: 30px;
 }
 
+main{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 .main2 {
   padding-bottom: 30px;
   min-height: 200px;
@@ -76,11 +82,11 @@ header {
 
 .herobox2 {
   flex: 1;
+  margin-bottom: 40px;
   background-image: url(images/image-bike-repair-service.jpg);
   min-height: 200px;
   background-size: cover;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
-
   border-radius: 5px;
 }
 
