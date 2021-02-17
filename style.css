@@ -1,76 +1,199 @@
 html{
-  height:100%;
+  background-image:linear-gradient(45deg, #fc5e55, #fa4083);
 }
-
-body{
-background-color:grey;
-background-image:url(images/background-adare-restaurant.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+body {
+  background-image: url(images/image-lion-background.png);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .container {
   width: 1024px;
+  min-height: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
 header {
-  height: 118px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align:center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0.301);
-  margin-left: auto;
-  margin-right: auto;
-  text-align:center;
-  padding-top:20px;
-  padding-bottom:20px;
+.main2 {
+  padding-bottom: 30px;
+  min-height: 200px;
+  padding-top:30px;
 }
 
-main {
-  /* background-color: orange; */
-  height: 400px;
+.cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cards1 {
+  background-image: url(images/image-background-card1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+.cards2 {
+  background-image: url(images/image-background-card2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+.cards3 {
+  background-image: url(images/image-background-card3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+.herobox1 {
+  flex: 2;
+}
+
+.herobox2 {
+  flex: 1;
+  background-image: url(images/image-bike-repair-service.jpg);
+  min-height: 200px;
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: Playfair, Arial;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.315);
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url(playfair-display/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(roboto-condensed/RobotoCondensed-Regular.ttf);
+}
+p {
+  font-family: roboto, Arial;
+  font-size: 1.7rem;
+  padding-top: 20px;
+  line-height: 30px;
+}
+
+.cards p {
+  font-size: 0.8rem;
+  margin: 0px 30px 20px 30px;
+  line-height: 20px;
+}
+.cards a {
+  font-size: 2rem;
+  font-family: playfair;
   color: white;
-  padding-left: 240px;
-  padding-right: 240px;
-  text-align:center;
-  padding-top:80px;
+  text-decoration: none;
 }
-
-footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top :40px;
-  padding-bottom: 40px;
+.cards img {
+  height: 150px;
+  padding-top: 10px;
 }
-
-h1{
-  font-size:84px;
-  color:white;
-  font-family:Arial, Helvetica, sans-serif 
-}
-
-a{
-  color:white;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-nav a{
-  text-decoration:none;
+.button {
+  color: #fa4083;
+  text-decoration: none;
   font-size: 20px;
-  padding-left:20px ;
-  padding-right:20px ;
-
+  font-family: playfair, sans-serif;
+  padding: 11px 25px;
+  display: inline-block;
+  margin: 30px 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+main .button {
+  background-color: white;
 }
 
-footer p {
-  color:white;
+main .button:hover{
+  background-color: green;
+  transition-duration:1.5s;
+}
+
+.navbutton {
+  margin-left: 10px;
+  text-align: center;
+  width:100px;
+  padding:11px 25px;
+  border: 2px solid white;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+  display: inline-block;
+  position: relative;
+}
+.dropbox{
+  position: absolute;
+  padding-top:20px;
+  margin-left:-36px;
+  display:none;
+}
+
+nav div:last-child:hover .dropbox{
+display:block;
+}
+
+.dropbutton {
+  margin-left: 10px;
+  text-align: center;
+  width: 100px;
+  padding:11px 25px;
+  border: 2px solid white;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
+  display: inline-block;
+}
+
+.navbutton a{
+color:white;
+text-decoration: none;
+}
+
+.tbox{
+  width:47%;
+  padding:50px;
+  border:1px solid white;
+  box-sizing: border-box;
+margin-top:50px;
+}
+.testimonials{
+  display:flex ;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  margin-bottom:50px;
+}
+
+.tbox p:last-of-type{
+  font-size:0.8rem;
+  padding-left:30px;
 }
 
